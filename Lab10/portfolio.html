@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kainat Zahra Alvi Sial - Portfolio</title>
+
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+   
+    <script src="particles.min.js"></script>
+
+</head>
+<body>
+
+<!-- Particles Background -->
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <div class="container">
+        <h1 class="logo">Kainat Zahra Alvi Sial</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="section">
+    <div class="container hero">
+        <h2 class="animate__animated animate__fadeInDown">Hi, I'm <span>Kainat Zahra Alvi Sial</span></h2>
+        <p class="animate__animated animate__fadeInUp">IT Student | Tech Enthusiast</p>
+        <div class="social-links animate__animated animate__fadeInUp">
+            <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/kainat-zahra-alvi-sial" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am an IT student passionate about coding, problem-solving, and bringing ideas to life through technology. I love building projects that challenge my creativity and skills.</p>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Linux</span>
+            <span>MySQL</span>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <img src="images/project1.jpg" alt="Project Image">
+            <div class="project-info">
+                <h3>Online Cake Order</h3>
+                <p>A web application to order cakes online with customized designs and delivery tracking.</p>
+                <p><strong>Made with:</strong> HTML, CSS, JavaScript</p>
+                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project2.jpg" alt="Project Image">
+            <div class="project-info">
+                <h3>Stealthy Striker</h3>
+                <p>A fun 2D game involving stealth missions and strategy.</p>
+                <p><strong>Made with:</strong> Unity, C#</p>
+                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project3.jpg" alt="Project Image">
+            <div class="project-info">
+                <h3>BST Visualizer</h3>
+                <p>An interactive Binary Search Tree visualization tool to learn data structures.</p>
+                <p><strong>Made with:</strong> JavaScript, D3.js</p>
+                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project4.jpg" alt="Project Image">
+            <div class="project-info">
+                <h3>Cookbook App</h3>
+                <p>A mobile app to browse, save, and share cooking recipes easily.</p>
+                <p><strong>Made with:</strong> Flutter, Firebase</p>
+                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project5.jpg" alt="Project Image">
+            <div class="project-info">
+                <h3>VST (Virtual Study Tracker)</h3>
+                <p>A productivity app to track study sessions and improve focus.</p>
+                <p><strong>Made with:</strong> React.js, Node.js</p>
+                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaboration, project ideas, or just a friendly hello!</p>
+        <a href="mailto:youremail@example.com" class="btn">Send Email</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Kainat Zahra Alvi Sial</p>
+</footer>
+
+<script>
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded.');
+});
+</script>
+
+<!-- Smooth Scroll -->
+<script>
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+        }
+    });
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>

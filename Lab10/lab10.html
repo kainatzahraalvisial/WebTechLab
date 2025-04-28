@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        #myDiv2 {
+            padding: 20px;
+            border: 5px solid black;
+        }
+        #myDiv {
+        position: relative; 
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    </style>
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<p id="test">This is a paragraph with id 'test'</p>
+<p class="test">This is a paragraph with class 'test'</p>
+<p class="test">This is another paragraph with class 'test'</p>
+<div id="myDiv">This is a Div</div>
+
+<div id="myDiv2">This is a div for task 8</div>
+
+
+<button id="but1">Animate Div</button>
+<button id="butt">Click</button>
+
+
+<script>
+    $(document).ready(function () {
+        // $("a").hide(1000); 
+        $("#test").hide(1000); 
+
+        $(".test").hide(1000);
+
+        // $("a").dblclick(function () {
+        //     $(this).hide(); 
+        // });
+
+        // $("#but1").click(function () {
+        //     $("#myDiv").animate({
+        //         opacity: 0.2,
+        //         height: "600px",
+        //         width: "600px"
+        //     }, 2000);
+        // });
+
+        $("a").addClass("important test");
+
+        // $("#but").click(function () {
+        //     $("#myDiv").height(500).width(500); 
+        // });
+        // $("#butt").click(function () {
+        //         var divHeight = $("#myDiv").outerHeight(true);
+        //         console.log("Div full height (including padding, border, and margin): " + divHeight + "px");
+        //     });
+
+        //     $("a").on("click", function () {
+        //     alert("Link clicked!"); 
+        // });
+
+        $("#but1").click(function () {
+            $("#myDiv").animate({
+                left: "300px" 
+            }, 1000);
+        });
+    });
+
+</script>
+</body>
