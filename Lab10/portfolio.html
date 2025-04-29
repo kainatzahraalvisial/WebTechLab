@@ -1,173 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kainat Zahra Alvi Sial - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kainat Zahra Alvi Sial - Portfolio</title>
 
- 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-    
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
+  <!-- Plugins -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="stylesheet.css">
 
-    <link rel="stylesheet" href="stylesheet.css">
+  <!-- jQuery and Plugins -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-   
-    <script src="particles.min.js"></script>
-
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+  <div id="background-layer"></div>
 
-<!-- Particles Background -->
-<div id="particles-js"></div>
-
-<!-- Navbar -->
-<nav id="navbar">
+  <!-- Navbar -->
+  <nav id="navbar">
     <div class="container">
-        <h1 class="logo">Kainat Zahra Alvi Sial</h1>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<section id="home" class="section">
+  <section id="home" class="section">
+    <div id="particles-js"></div>
     <div class="container hero">
-        <h2 class="animate__animated animate__fadeInDown">Hi, I'm <span>Kainat Zahra Alvi Sial</span></h2>
-        <p class="animate__animated animate__fadeInUp">IT Student | Tech Enthusiast</p>
-        <div class="social-links animate__animated animate__fadeInUp">
-            <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/kainat-zahra-alvi-sial" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>
+      <h2 class="animate__animated animate__fadeInUp">Hi, I'm <span>Kainat Zahra Alvi Sial</span></h2>
+      <p class="animate__animated animate__fadeInUp">IT Student | Tech Enthusiast</p>
+      <div class="social-links animate__animated animate__fadeInUp">
+        <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/kainat-zahra-alvi-sial" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="about" class="section">
+  <section id="about" class="section">
     <div class="container">
-        <h2>About Me</h2>
-        <p>I am an IT student passionate about coding, problem-solving, and bringing ideas to life through technology. I love building projects that challenge my creativity and skills.</p>
+      <h2>About Me</h2>
+      <p>I am an IT student passionate about coding, problem-solving, and bringing ideas to life through technology. I love building projects that challenge my creativity and skills.</p>
     </div>
-</section>
+  </section>
 
-<section id="skills" class="section">
+  <section id="skills" class="section">
     <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Bootstrap</span>
-            <span>Linux</span>
-            <span>MySQL</span>
-        </div>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Bootstrap</span>
+        <span>Linux</span>
+        <span>MySQL</span>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="projects" class="section">
+  <section id="projects" class="section">
     <div class="container">
-        <h2>Projects</h2>
-
-        <div class="project-card">
-            <img src="images/project1.jpg" alt="Project Image">
-            <div class="project-info">
-                <h3>Online Cake Order</h3>
-                <p>A web application to order cakes online with customized designs and delivery tracking.</p>
-                <p><strong>Made with:</strong> HTML, CSS, JavaScript</p>
-                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"class="btn">View on GitHub</a>
-            </div>
+      <h2>Projects</h2>
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project Image">
+        <div class="project-info">
+          <h3>Online Cake Order</h3>
+          <p>A web application to order cakes online with customized designs and delivery tracking.</p>
+          <p><strong>Made with:</strong> HTML, CSS, JavaScript</p>
+          <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
         </div>
-
-        <div class="project-card">
-            <img src="images/project2.jpg" alt="Project Image">
-            <div class="project-info">
-                <h3>Stealthy Striker</h3>
-                <p>A fun 2D game involving stealth missions and strategy.</p>
-                <p><strong>Made with:</strong> Unity, C#</p>
-                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"class="btn">View on GitHub</a>
-            </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project Image">
+        <div class="project-info">
+          <h3>Stealthy Striker</h3>
+          <p>A fun 2D game involving stealth missions and strategy.</p>
+          <p><strong>Made with:</strong> C++, SFML</p>
+          <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
         </div>
-
-        <div class="project-card">
-            <img src="images/project3.jpg" alt="Project Image">
-            <div class="project-info">
-                <h3>BST Visualizer</h3>
-                <p>An interactive Binary Search Tree visualization tool to learn data structures.</p>
-                <p><strong>Made with:</strong> JavaScript, D3.js</p>
-                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
-            </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Project Image">
+        <div class="project-info">
+          <h3>BST Visualizer</h3>
+          <p>An interactive Binary Search Tree visualization tool to learn data structures.</p>
+          <p><strong>Made with:</strong> C++, SFML</p>
+          <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
         </div>
-
-        <div class="project-card">
-            <img src="images/project4.jpg" alt="Project Image">
-            <div class="project-info">
-                <h3>Cookbook App</h3>
-                <p>A mobile app to browse, save, and share cooking recipes easily.</p>
-                <p><strong>Made with:</strong> Flutter, Firebase</p>
-                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer"class="btn">View on GitHub</a>
-            </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project4.jpg" alt="Project Image">
+        <div class="project-info">
+          <h3>Cookbook App</h3>
+          <p>A Flutter mobile app for food lovers to browse recipes and plan meals. It includes a login feature and a clean, responsive UI. While it doesn’t yet support meal customization or grocery tracking, it lays a strong foundation for future upgrades.</p>
+          <p><strong>Made with:</strong> Flutter, Firebase</p>
+          <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
         </div>
-
-        <div class="project-card">
-            <img src="images/project5.jpg" alt="Project Image">
-            <div class="project-info">
-                <h3>VST (Virtual Study Tracker)</h3>
-                <p>A productivity app to track study sessions and improve focus.</p>
-                <p><strong>Made with:</strong> React.js, Node.js</p>
-                <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
-            </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project5.jpg" alt="Project Image">
+        <div class="project-info">
+          <h3>Virtual Time Capsule)</h3>
+          <p>Virtual Time Capsule is a web-based platform that allows users to digitally preserve personal memories, messages, and media inside a virtual capsule that can be unlocked at a future date. Users can write letters to their future selves, upload media, schedule opening times, and receive notifications. It merges memory preservation with digital interactivity, designed for longevity, privacy, and emotional connection.</p>
+          <p><strong>Made with:</strong> HTML, CSS, BootStrap, Three.js, .Net, MySql </p>
+          <a href="https://github.com/kainatzahraalvisial" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
         </div>
-
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact" class="section">
+  <section id="contact" class="section">
     <div class="container">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaboration, project ideas, or just a friendly hello!</p>
-        <a href="mailto:youremail@example.com" class="btn">Send Email</a>
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaboration, project ideas, or just a friendly hello!</p>
+      <a href="mailto:zalvi645@gmail.com" class="btn">Send Email</a>
     </div>
-</section>
+  </section>
 
-<footer>
+  <footer>
     <p>© 2025 Kainat Zahra Alvi Sial</p>
-</footer>
+  </footer>
 
-<script>
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded.');
-});
-</script>
-
-<!-- Smooth Scroll -->
-<script>
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800);
+  <!-- Particles.js Configuration -->
+  <script>
+    console.log('Initializing Particles.js');
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#C4AB83" },
+        shape: { type: "circle" },
+        opacity: { value: 1, random: false },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#8D695D",
+          opacity: 1,
+          width: 1
+        },
+        move: { enable: true, speed: 2, direction: "none", random: true }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 300,
+            line_linked: { opacity: 1 }
+          },
+          push: { particles_nb: 4 }
         }
+      },
+      retina_detect: true
     });
-});
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+    // Debug mouse events on particles-js
+    document.getElementById('particles-js').addEventListener('mousemove', function() {
+        console.log('Mouse moved over particles-js');
+    });
+  </script>
 
+  <!-- Smooth Scroll and Animations -->
+  <script>
+    $(document).ready(function(){
+      // Smooth scrolling with jQuery Easing
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          console.log('Navigating to:', hash);
+          var targetSection = $('section' + hash);
+          if (targetSection.length) {
+            setTimeout(function() {
+              var targetOffset = targetSection.offset().top;
+              console.log('Target offset:', targetOffset);
+              if (targetOffset < 0) {
+                console.log('Negative offset detected, using position().top');
+                targetOffset = targetSection.position().top;
+                console.log('Recalculated offset:', targetOffset);
+              }
+              var navbarHeight = $('#navbar').outerHeight();
+              console.log('Navbar height:', navbarHeight);
+              var containerOffset = targetSection.find('.container').offset().top;
+              console.log('Container offset:', containerOffset);
+              $('html, body').animate({
+                scrollTop: containerOffset - navbarHeight
+              }, 1000, 'easeInOutExpo');
+            }, 200);
+          } else {
+            console.log('Section not found:', hash);
+          }
+        }
+      });
+
+      // Waypoints for project card animations
+      $('.project-card').waypoint(function() {
+        console.log('Waypoint triggered for project card:', this.element);
+        $(this.element).addClass('animate__animated animate__fadeInUp animated-card');
+      }, {
+        offset: '80%'
+      });
+
+      // Navbar background change on scroll
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 50) {
+          $('#navbar').addClass('scrolled');
+        } else {
+          $('#navbar').removeClass('scrolled');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
